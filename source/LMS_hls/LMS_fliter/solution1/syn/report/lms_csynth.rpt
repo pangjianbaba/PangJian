@@ -1,0 +1,235 @@
+
+
+================================================================
+== Vivado HLS Report for 'lms'
+================================================================
+* Date:           Fri Jul 31 17:01:33 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        LMS_fliter
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z007sclg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|    35.509|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    1|    1|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|     40|      -|      -|
+|Expression       |        -|      -|      0|    105|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      -|      -|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|      -|
+|Register         |        -|      -|   1036|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|     40|   1036|    105|
++-----------------+---------+-------+-------+-------+
+|Available        |      100|     66|  28800|  14400|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|     60|      3|   ~0  |
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    +--------------------------+----------------------+--------------+
+    |         Instance         |        Module        |  Expression  |
+    +--------------------------+----------------------+--------------+
+    |lms_mac_muladd_16cud_U2   |lms_mac_muladd_16cud  | i0 + i1 * i2 |
+    |lms_mac_muladd_16dEe_U3   |lms_mac_muladd_16dEe  | i0 + i1 * i2 |
+    |lms_mac_muladd_16eOg_U4   |lms_mac_muladd_16eOg  | i0 + i1 * i2 |
+    |lms_mac_muladd_16eOg_U5   |lms_mac_muladd_16eOg  | i0 + i1 * i2 |
+    |lms_mac_muladd_16eOg_U6   |lms_mac_muladd_16eOg  | i0 + i1 * i2 |
+    |lms_mac_muladd_16eOg_U7   |lms_mac_muladd_16eOg  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U9   |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U10  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U11  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U12  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U13  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U14  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U15  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U16  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U17  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U18  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U19  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U20  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U21  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U22  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U23  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U24  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U25  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U26  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U27  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U28  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U29  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U30  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U31  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U32  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U33  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U34  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U35  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U36  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U37  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U38  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U39  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mac_muladd_20fYi_U40  |lms_mac_muladd_20fYi  | i0 + i1 * i2 |
+    |lms_mul_mul_16s_1bkb_U1   |lms_mul_mul_16s_1bkb  |    i0 * i1   |
+    |lms_mul_mul_16s_1bkb_U8   |lms_mul_mul_16s_1bkb  |    i0 * i1   |
+    +--------------------------+----------------------+--------------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |ret_V_7_i_cast_fu_1037_p2  |     +    |      0|  0|  38|          31|          31|
+    |ret_V_7_i_fu_522_p2        |     +    |      0|  0|  39|          32|          32|
+    |ret_V_fu_554_p2            |     -    |      0|  0|  24|          17|          17|
+    |ap_block_pp0_stage0_01001  |    and   |      0|  0|   2|           1|           1|
+    |ap_enable_pp0              |    xor   |      0|  0|   2|           1|           2|
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |Total                      |          |      0|  0| 105|          82|          83|
+    +---------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |r_V_1_cast_reg_2154      |  31|   0|   34|          3|
+    |r_V_5_7_i_reg_2144       |  30|   0|   30|          0|
+    |tmp_11_reg_2149          |  13|   0|   13|          0|
+    |wk_V_0                   |  16|   0|   16|          0|
+    |wk_V_1                   |  16|   0|   16|          0|
+    |wk_V_10                  |  16|   0|   16|          0|
+    |wk_V_11                  |  16|   0|   16|          0|
+    |wk_V_12                  |  16|   0|   16|          0|
+    |wk_V_13                  |  16|   0|   16|          0|
+    |wk_V_14                  |  16|   0|   16|          0|
+    |wk_V_15                  |  16|   0|   16|          0|
+    |wk_V_16                  |  16|   0|   16|          0|
+    |wk_V_17                  |  16|   0|   16|          0|
+    |wk_V_18                  |  16|   0|   16|          0|
+    |wk_V_19                  |  16|   0|   16|          0|
+    |wk_V_2                   |  16|   0|   16|          0|
+    |wk_V_20                  |  16|   0|   16|          0|
+    |wk_V_21                  |  16|   0|   16|          0|
+    |wk_V_22                  |  16|   0|   16|          0|
+    |wk_V_23                  |  16|   0|   16|          0|
+    |wk_V_24                  |  16|   0|   16|          0|
+    |wk_V_25                  |  16|   0|   16|          0|
+    |wk_V_26                  |  16|   0|   16|          0|
+    |wk_V_27                  |  16|   0|   16|          0|
+    |wk_V_28                  |  16|   0|   16|          0|
+    |wk_V_29                  |  16|   0|   16|          0|
+    |wk_V_3                   |  16|   0|   16|          0|
+    |wk_V_30                  |  16|   0|   16|          0|
+    |wk_V_31                  |  16|   0|   16|          0|
+    |wk_V_4                   |  16|   0|   16|          0|
+    |wk_V_5                   |  16|   0|   16|          0|
+    |wk_V_6                   |  16|   0|   16|          0|
+    |wk_V_7                   |  16|   0|   16|          0|
+    |wk_V_8                   |  16|   0|   16|          0|
+    |wk_V_9                   |  16|   0|   16|          0|
+    |xk_V_0                   |  14|   0|   14|          0|
+    |xk_V_1                   |  14|   0|   14|          0|
+    |xk_V_10                  |  14|   0|   14|          0|
+    |xk_V_11                  |  14|   0|   14|          0|
+    |xk_V_12                  |  14|   0|   14|          0|
+    |xk_V_13                  |  14|   0|   14|          0|
+    |xk_V_14                  |  14|   0|   14|          0|
+    |xk_V_15                  |  14|   0|   14|          0|
+    |xk_V_16                  |  14|   0|   14|          0|
+    |xk_V_17                  |  14|   0|   14|          0|
+    |xk_V_18                  |  14|   0|   14|          0|
+    |xk_V_19                  |  14|   0|   14|          0|
+    |xk_V_2                   |  14|   0|   14|          0|
+    |xk_V_20                  |  14|   0|   14|          0|
+    |xk_V_21                  |  14|   0|   14|          0|
+    |xk_V_22                  |  14|   0|   14|          0|
+    |xk_V_23                  |  14|   0|   14|          0|
+    |xk_V_24                  |  14|   0|   14|          0|
+    |xk_V_25                  |  14|   0|   14|          0|
+    |xk_V_26                  |  14|   0|   14|          0|
+    |xk_V_27                  |  14|   0|   14|          0|
+    |xk_V_28                  |  14|   0|   14|          0|
+    |xk_V_29                  |  14|   0|   14|          0|
+    |xk_V_3                   |  14|   0|   14|          0|
+    |xk_V_30                  |  14|   0|   14|          0|
+    |xk_V_4                   |  14|   0|   14|          0|
+    |xk_V_5                   |  14|   0|   14|          0|
+    |xk_V_6                   |  14|   0|   14|          0|
+    |xk_V_6_load_reg_2139     |  14|   0|   14|          0|
+    |xk_V_7                   |  14|   0|   14|          0|
+    |xk_V_8                   |  14|   0|   14|          0|
+    |xk_V_9                   |  14|   0|   14|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    |1036|   0| 1039|          3|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------+-----+-----+------------+--------------+--------------+
+|  RTL Ports | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------+-----+-----+------------+--------------+--------------+
+|ap_clk      |  in |    1| ap_ctrl_hs |      lms     | return value |
+|ap_rst      |  in |    1| ap_ctrl_hs |      lms     | return value |
+|ap_start    |  in |    1| ap_ctrl_hs |      lms     | return value |
+|ap_done     | out |    1| ap_ctrl_hs |      lms     | return value |
+|ap_idle     | out |    1| ap_ctrl_hs |      lms     | return value |
+|ap_ready    | out |    1| ap_ctrl_hs |      lms     | return value |
+|y_V         | out |   14|   ap_vld   |      y_V     |    pointer   |
+|y_V_ap_vld  | out |    1|   ap_vld   |      y_V     |    pointer   |
+|xn_V        |  in |   14|   ap_none  |     xn_V     |    scalar    |
+|dn_V        |  in |   14|   ap_none  |     dn_V     |    scalar    |
++------------+-----+-----+------------+--------------+--------------+
+

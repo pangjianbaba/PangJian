@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'wk_V_31' is power-on initialization." projectName="LMS_fliter" solutionName="solution1" date="2020-07-31T17:01:33.737+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'wk_V_30' is power-on initialization." projectName="LMS_fliter" solutionName="solution1" date="2020-07-31T17:01:33.696+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'wk_V_29' is power-on initialization." projectName="LMS_fliter" solutionName="solution1" date="2020-07-31T17:01:33.691+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'wk_V_28' is power-on initialization." projectName="LMS_fliter" solutionName="solution1" date="2020-07-31T17:01:33.689+0800" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

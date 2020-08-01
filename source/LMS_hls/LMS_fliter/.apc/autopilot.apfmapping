@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="lms.cpp" path="E:\Vivado_2018\HLS\hls_prj\LMS_fliter\lms\lms.cpp"/>
+    <originFiles name="lms.h" path="E:\Vivado_2018\HLS\hls_prj\LMS_fliter\lms\lms.h"/>
+  </source>
+  <testbench>
+    <originFiles name="test.cpp" path="E:\Vivado_2018\HLS\hls_prj\LMS_fliter\lms\test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

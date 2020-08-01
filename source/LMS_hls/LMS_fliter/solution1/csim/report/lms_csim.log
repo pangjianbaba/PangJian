@@ -1,0 +1,23 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../lms/lms.cpp in debug mode
+   Generating csim.exe
+0
+0
+0
+-0.000244141
+-0.000244141
+-0.000732422
+-0.000244141
+0.000488281
+-0.000732422
+-0.0012207
+0.000488281
+0.0012207
+-0.00366211
+-0.000976563
+0.00366211
+-0.00146484
+0.00390625
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

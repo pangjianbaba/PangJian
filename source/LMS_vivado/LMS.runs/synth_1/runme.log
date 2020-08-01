@@ -1,0 +1,336 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Vivado_2018/Vivado/LMS/LMS.sim/IP/xilinx_com_hls_lms_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx_2018/Vivado/2018.3/data/ip'.
+Command: synth_design -top top -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9188 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 394.520 ; gain = 99.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/new/top.v:31]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/new/top.v:32]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/new/top.v:33]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/new/top.v:35]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [E:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/new/top.v:36]
+INFO: [Synth 8-6157] synthesizing module 'data_source' [E:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/new/data_source.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xn_rom' [E:/Vivado_2018/Vivado/LMS/LMS.runs/synth_1/.Xil/Vivado-9740-Mico-2020YWOCHW/realtime/xn_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xn_rom' (1#1) [E:/Vivado_2018/Vivado/LMS/LMS.runs/synth_1/.Xil/Vivado-9740-Mico-2020YWOCHW/realtime/xn_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'xn_noise_rom' [E:/Vivado_2018/Vivado/LMS/LMS.runs/synth_1/.Xil/Vivado-9740-Mico-2020YWOCHW/realtime/xn_noise_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xn_noise_rom' (2#1) [E:/Vivado_2018/Vivado/LMS/LMS.runs/synth_1/.Xil/Vivado-9740-Mico-2020YWOCHW/realtime/xn_noise_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_source' (3#1) [E:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/new/data_source.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LMS' [E:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/new/LMS.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lms_0' [E:/Vivado_2018/Vivado/LMS/LMS.runs/synth_1/.Xil/Vivado-9740-Mico-2020YWOCHW/realtime/lms_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'lms_0' (4#1) [E:/Vivado_2018/Vivado/LMS/LMS.runs/synth_1/.Xil/Vivado-9740-Mico-2020YWOCHW/realtime/lms_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'LMS' (5#1) [E:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/new/LMS.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u1'. This will prevent further optimization [E:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/new/top.v:42]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u2'. This will prevent further optimization [E:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/new/top.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'top' (6#1) [E:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 450.500 ; gain = 155.922
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 450.500 ; gain = 155.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 450.500 ; gain = 155.922
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/lms_0/lms_0_in_context.xdc] for cell 'u2/LMS_IP'
+Finished Parsing XDC File [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/lms_0/lms_0_in_context.xdc] for cell 'u2/LMS_IP'
+Parsing XDC File [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/xn_noise_rom/xn_noise_rom/xn_noise_rom_in_context.xdc] for cell 'u1/xn_1'
+Finished Parsing XDC File [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/xn_noise_rom/xn_noise_rom/xn_noise_rom_in_context.xdc] for cell 'u1/xn_1'
+Parsing XDC File [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/xn_rom/xn_rom/xn_rom_in_context.xdc] for cell 'u1/dn_1'
+Finished Parsing XDC File [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/xn_rom/xn_rom/xn_rom_in_context.xdc] for cell 'u1/dn_1'
+Parsing XDC File [E:/Vivado_2018/Vivado/LMS/LMS.srcs/constrs_1/new/Top.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [E:/Vivado_2018/Vivado/LMS/LMS.srcs/constrs_1/new/Top.xdc:78]
+Finished Parsing XDC File [E:/Vivado_2018/Vivado/LMS/LMS.srcs/constrs_1/new/Top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Vivado_2018/Vivado/LMS/LMS.srcs/constrs_1/new/Top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 800.512 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 800.512 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 800.512 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 800.512 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u1/dn_1' at clock pin 'clka' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u1/xn_1' at clock pin 'clka' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u2/LMS_IP' at clock pin 'ap_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 800.512 ; gain = 505.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 800.512 ; gain = 505.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u2/LMS_IP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u1/xn_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u1/dn_1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 800.512 ; gain = 505.934
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "ap_start" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 800.512 ; gain = 505.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module data_source 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module LMS 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "ap_start" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 800.512 ; gain = 505.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 808.508 ; gain = 513.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 818.039 ; gain = 523.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 818.543 ; gain = 523.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 818.543 ; gain = 523.965
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 818.543 ; gain = 523.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 818.543 ; gain = 523.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 818.543 ; gain = 523.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 818.543 ; gain = 523.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 818.543 ; gain = 523.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xn_rom        |         1|
+|2     |xn_noise_rom  |         1|
+|3     |lms_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |lms_0        |     1|
+|2     |xn_noise_rom |     1|
+|3     |xn_rom       |     1|
+|4     |BUFG         |     1|
+|5     |CARRY4       |     3|
+|6     |LUT1         |     1|
+|7     |FDCE         |    28|
+|8     |FDRE         |    12|
+|9     |IBUF         |     3|
+|10    |OBUF         |    15|
++------+-------------+------+
+
+Report Instance Areas: 
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            |   109|
+|2     |  u1     |data_source |    44|
+|3     |  u2     |LMS         |    46|
++------+---------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 818.543 ; gain = 523.965
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 818.543 ; gain = 173.953
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 818.543 ; gain = 523.965
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 831.746 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 831.746 ; gain = 545.250
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 831.746 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado_2018/Vivado/LMS/LMS.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 20:15:45 2020...

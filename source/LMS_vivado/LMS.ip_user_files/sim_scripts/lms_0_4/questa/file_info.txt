@@ -1,0 +1,7 @@
+dotProd.v,verilog,xil_defaultlib,../../../ipstatic/hdl/verilog/dotProd.v,
+lms_mac_muladd_14bkb.v,verilog,xil_defaultlib,../../../ipstatic/hdl/verilog/lms_mac_muladd_14bkb.v,
+lms_mul_mul_18s_1cud.v,verilog,xil_defaultlib,../../../ipstatic/hdl/verilog/lms_mul_mul_18s_1cud.v,
+lms_mux_646_14_1_1.v,verilog,xil_defaultlib,../../../ipstatic/hdl/verilog/lms_mux_646_14_1_1.v,
+lms.v,verilog,xil_defaultlib,../../../ipstatic/hdl/verilog/lms.v,
+lms_0.v,verilog,xil_defaultlib,../../../../LMS.srcs/sources_1/ip/lms_0_4/sim/lms_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

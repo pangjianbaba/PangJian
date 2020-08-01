@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../LMS.ip_user_files/ipstatic/hdl/verilog/lms_mac_muladd_16cud.v" \
+"../../../../LMS.ip_user_files/ipstatic/hdl/verilog/lms_mac_muladd_16dEe.v" \
+"../../../../LMS.ip_user_files/ipstatic/hdl/verilog/lms_mac_muladd_16eOg.v" \
+"../../../../LMS.ip_user_files/ipstatic/hdl/verilog/lms_mac_muladd_20fYi.v" \
+"../../../../LMS.ip_user_files/ipstatic/hdl/verilog/lms_mul_mul_16s_1bkb.v" \
+"../../../../LMS.ip_user_files/ipstatic/hdl/verilog/lms.v" \
+"../../../../LMS.srcs/sources_1/ip/lms_0_5/sim/lms_0.v" \
+"../../../../LMS.srcs/sources_1/ip/xn_noise_rom/sim/xn_noise_rom.v" \
+"../../../../LMS.srcs/sources_1/ip/xn_rom/sim/xn_rom.v" \
+"../../../../LMS.srcs/sources_1/new/LMS.v" \
+"../../../../LMS.srcs/sources_1/new/data_source.v" \
+"../../../../LMS.srcs/sources_1/new/top.v" \
+"../../../../LMS.srcs/sim_1/new/top_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

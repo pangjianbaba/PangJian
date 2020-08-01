@@ -1,0 +1,514 @@
+
+*** Running vivado
+    with args -log lms_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lms_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source lms_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Vivado_2018/Vivado/LMS/LMS.sim/IP/xilinx_com_hls_lms_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx_2018/Vivado/2018.3/data/ip'.
+Command: synth_design -top lms_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13008 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 392.477 ; gain = 96.734
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lms_0' [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/synth/lms_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'lms' [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms.v:12]
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms.v:43]
+INFO: [Synth 8-6157] synthesizing module 'lms_mul_mul_16s_1bkb' [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mul_mul_16s_1bkb.v:13]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 14 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'lms_mul_mul_16s_1bkb_DSP48_0' [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mul_mul_16s_1bkb.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'lms_mul_mul_16s_1bkb_DSP48_0' (1#1) [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mul_mul_16s_1bkb.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'lms_mul_mul_16s_1bkb' (2#1) [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mul_mul_16s_1bkb.v:13]
+INFO: [Synth 8-6157] synthesizing module 'lms_mac_muladd_16cud' [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mac_muladd_16cud.v:33]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 14 - type: integer 
+	Parameter din2_WIDTH bound to: 30 - type: integer 
+	Parameter dout_WIDTH bound to: 31 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'lms_mac_muladd_16cud_DSP48_1' [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mac_muladd_16cud.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'lms_mac_muladd_16cud_DSP48_1' (3#1) [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mac_muladd_16cud.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'lms_mac_muladd_16cud' (4#1) [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mac_muladd_16cud.v:33]
+INFO: [Synth 8-6157] synthesizing module 'lms_mac_muladd_16dEe' [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mac_muladd_16dEe.v:33]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 14 - type: integer 
+	Parameter din2_WIDTH bound to: 31 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'lms_mac_muladd_16dEe_DSP48_2' [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mac_muladd_16dEe.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'lms_mac_muladd_16dEe_DSP48_2' (5#1) [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mac_muladd_16dEe.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'lms_mac_muladd_16dEe' (6#1) [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mac_muladd_16dEe.v:33]
+INFO: [Synth 8-6157] synthesizing module 'lms_mac_muladd_16eOg' [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mac_muladd_16eOg.v:33]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 14 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'lms_mac_muladd_16eOg_DSP48_3' [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mac_muladd_16eOg.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'lms_mac_muladd_16eOg_DSP48_3' (7#1) [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mac_muladd_16eOg.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'lms_mac_muladd_16eOg' (8#1) [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mac_muladd_16eOg.v:33]
+INFO: [Synth 8-6157] synthesizing module 'lms_mac_muladd_20fYi' [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mac_muladd_20fYi.v:33]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 20 - type: integer 
+	Parameter din1_WIDTH bound to: 14 - type: integer 
+	Parameter din2_WIDTH bound to: 36 - type: integer 
+	Parameter dout_WIDTH bound to: 36 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'lms_mac_muladd_20fYi_DSP48_4' [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mac_muladd_20fYi.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'lms_mac_muladd_20fYi_DSP48_4' (9#1) [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mac_muladd_20fYi.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'lms_mac_muladd_20fYi' (10#1) [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms_mac_muladd_20fYi.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'lms' (11#1) [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/hdl/verilog/lms.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'lms_0' (12#1) [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/synth/lms_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 447.852 ; gain = 152.109
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 447.852 ; gain = 152.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 447.852 ; gain = 152.109
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/constraints/lms_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/Vivado_2018/Vivado/LMS/LMS.srcs/sources_1/ip/lms_0_5/constraints/lms_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/Vivado_2018/Vivado/LMS/LMS.runs/lms_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Vivado_2018/Vivado/LMS/LMS.runs/lms_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 815.477 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 815.625 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 817.191 ; gain = 1.715
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 817.191 ; gain = 521.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 817.191 ; gain = 521.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  E:/Vivado_2018/Vivado/LMS/LMS.runs/lms_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 817.191 ; gain = 521.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 817.191 ; gain = 521.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
+	               16 Bit    Registers := 32    
+	               14 Bit    Registers := 32    
+	               13 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module lms 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
+	               16 Bit    Registers := 32    
+	               14 Bit    Registers := 32    
+	               13 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP lms_mac_muladd_20fYi_U9/lms_mac_muladd_20fYi_DSP48_4_U/p, operation Mode is: C'+A*B.
+DSP Report: register C is absorbed into DSP lms_mac_muladd_20fYi_U9/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: operator lms_mac_muladd_20fYi_U9/lms_mac_muladd_20fYi_DSP48_4_U/p is absorbed into DSP lms_mac_muladd_20fYi_U9/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: operator lms_mac_muladd_20fYi_U9/lms_mac_muladd_20fYi_DSP48_4_U/m is absorbed into DSP lms_mac_muladd_20fYi_U9/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: Generating DSP lms_mul_mul_16s_1bkb_U1/lms_mul_mul_16s_1bkb_DSP48_0_U/p, operation Mode is: A2*B.
+DSP Report: register wk_V_0_reg is absorbed into DSP lms_mul_mul_16s_1bkb_U1/lms_mul_mul_16s_1bkb_DSP48_0_U/p.
+DSP Report: operator lms_mul_mul_16s_1bkb_U1/lms_mul_mul_16s_1bkb_DSP48_0_U/p is absorbed into DSP lms_mul_mul_16s_1bkb_U1/lms_mul_mul_16s_1bkb_DSP48_0_U/p.
+DSP Report: Generating DSP lms_mac_muladd_20fYi_U10/lms_mac_muladd_20fYi_DSP48_4_U/p, operation Mode is: C'+A*B2.
+DSP Report: register xk_V_0_reg is absorbed into DSP lms_mac_muladd_20fYi_U10/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: register C is absorbed into DSP lms_mac_muladd_20fYi_U10/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: operator lms_mac_muladd_20fYi_U10/lms_mac_muladd_20fYi_DSP48_4_U/p is absorbed into DSP lms_mac_muladd_20fYi_U10/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: operator lms_mac_muladd_20fYi_U10/lms_mac_muladd_20fYi_DSP48_4_U/m is absorbed into DSP lms_mac_muladd_20fYi_U10/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: Generating DSP lms_mac_muladd_16cud_U2/lms_mac_muladd_16cud_DSP48_1_U/p, operation Mode is: C+A2*B2.
+DSP Report: register wk_V_1_reg is absorbed into DSP lms_mac_muladd_16cud_U2/lms_mac_muladd_16cud_DSP48_1_U/p.
+DSP Report: register xk_V_0_reg is absorbed into DSP lms_mac_muladd_16cud_U2/lms_mac_muladd_16cud_DSP48_1_U/p.
+DSP Report: operator lms_mac_muladd_16cud_U2/lms_mac_muladd_16cud_DSP48_1_U/p is absorbed into DSP lms_mac_muladd_16cud_U2/lms_mac_muladd_16cud_DSP48_1_U/p.
+DSP Report: operator lms_mac_muladd_16cud_U2/lms_mac_muladd_16cud_DSP48_1_U/m is absorbed into DSP lms_mac_muladd_16cud_U2/lms_mac_muladd_16cud_DSP48_1_U/p.
+DSP Report: Generating DSP lms_mac_muladd_20fYi_U11/lms_mac_muladd_20fYi_DSP48_4_U/p, operation Mode is: C'+A*B''.
+DSP Report: register xk_V_0_reg is absorbed into DSP lms_mac_muladd_20fYi_U11/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: register xk_V_1_reg is absorbed into DSP lms_mac_muladd_20fYi_U11/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: register C is absorbed into DSP lms_mac_muladd_20fYi_U11/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: operator lms_mac_muladd_20fYi_U11/lms_mac_muladd_20fYi_DSP48_4_U/p is absorbed into DSP lms_mac_muladd_20fYi_U11/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: operator lms_mac_muladd_20fYi_U11/lms_mac_muladd_20fYi_DSP48_4_U/m is absorbed into DSP lms_mac_muladd_20fYi_U11/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: Generating DSP lms_mac_muladd_16dEe_U3/lms_mac_muladd_16dEe_DSP48_2_U/p, operation Mode is: C+A2*B''.
+DSP Report: register wk_V_2_reg is absorbed into DSP lms_mac_muladd_16dEe_U3/lms_mac_muladd_16dEe_DSP48_2_U/p.
+DSP Report: register xk_V_0_reg is absorbed into DSP lms_mac_muladd_16dEe_U3/lms_mac_muladd_16dEe_DSP48_2_U/p.
+DSP Report: register xk_V_1_reg is absorbed into DSP lms_mac_muladd_16dEe_U3/lms_mac_muladd_16dEe_DSP48_2_U/p.
+DSP Report: operator lms_mac_muladd_16dEe_U3/lms_mac_muladd_16dEe_DSP48_2_U/p is absorbed into DSP lms_mac_muladd_16dEe_U3/lms_mac_muladd_16dEe_DSP48_2_U/p.
+DSP Report: operator lms_mac_muladd_16dEe_U3/lms_mac_muladd_16dEe_DSP48_2_U/m is absorbed into DSP lms_mac_muladd_16dEe_U3/lms_mac_muladd_16dEe_DSP48_2_U/p.
+DSP Report: Generating DSP lms_mac_muladd_20fYi_U12/lms_mac_muladd_20fYi_DSP48_4_U/p, operation Mode is: C'+A*B''.
+DSP Report: register xk_V_1_reg is absorbed into DSP lms_mac_muladd_20fYi_U12/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: register xk_V_2_reg is absorbed into DSP lms_mac_muladd_20fYi_U12/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: register C is absorbed into DSP lms_mac_muladd_20fYi_U12/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: operator lms_mac_muladd_20fYi_U12/lms_mac_muladd_20fYi_DSP48_4_U/p is absorbed into DSP lms_mac_muladd_20fYi_U12/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: operator lms_mac_muladd_20fYi_U12/lms_mac_muladd_20fYi_DSP48_4_U/m is absorbed into DSP lms_mac_muladd_20fYi_U12/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: Generating DSP lms_mac_muladd_16eOg_U4/lms_mac_muladd_16eOg_DSP48_3_U/p, operation Mode is: C+A2*B''.
+DSP Report: register wk_V_3_reg is absorbed into DSP lms_mac_muladd_16eOg_U4/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: register xk_V_1_reg is absorbed into DSP lms_mac_muladd_16eOg_U4/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: register xk_V_2_reg is absorbed into DSP lms_mac_muladd_16eOg_U4/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: operator lms_mac_muladd_16eOg_U4/lms_mac_muladd_16eOg_DSP48_3_U/p is absorbed into DSP lms_mac_muladd_16eOg_U4/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: operator lms_mac_muladd_16eOg_U4/lms_mac_muladd_16eOg_DSP48_3_U/m is absorbed into DSP lms_mac_muladd_16eOg_U4/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: Generating DSP lms_mac_muladd_20fYi_U13/lms_mac_muladd_20fYi_DSP48_4_U/p, operation Mode is: C'+A*B''.
+DSP Report: register xk_V_2_reg is absorbed into DSP lms_mac_muladd_20fYi_U13/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: register xk_V_3_reg is absorbed into DSP lms_mac_muladd_20fYi_U13/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: register C is absorbed into DSP lms_mac_muladd_20fYi_U13/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: operator lms_mac_muladd_20fYi_U13/lms_mac_muladd_20fYi_DSP48_4_U/p is absorbed into DSP lms_mac_muladd_20fYi_U13/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: operator lms_mac_muladd_20fYi_U13/lms_mac_muladd_20fYi_DSP48_4_U/m is absorbed into DSP lms_mac_muladd_20fYi_U13/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: Generating DSP lms_mac_muladd_16eOg_U5/lms_mac_muladd_16eOg_DSP48_3_U/p, operation Mode is: C+A2*B''.
+DSP Report: register wk_V_4_reg is absorbed into DSP lms_mac_muladd_16eOg_U5/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: register xk_V_2_reg is absorbed into DSP lms_mac_muladd_16eOg_U5/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: register xk_V_3_reg is absorbed into DSP lms_mac_muladd_16eOg_U5/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: operator lms_mac_muladd_16eOg_U5/lms_mac_muladd_16eOg_DSP48_3_U/p is absorbed into DSP lms_mac_muladd_16eOg_U5/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: operator lms_mac_muladd_16eOg_U5/lms_mac_muladd_16eOg_DSP48_3_U/m is absorbed into DSP lms_mac_muladd_16eOg_U5/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: Generating DSP lms_mac_muladd_20fYi_U14/lms_mac_muladd_20fYi_DSP48_4_U/p, operation Mode is: C'+A*B''.
+DSP Report: register xk_V_3_reg is absorbed into DSP lms_mac_muladd_20fYi_U14/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: register xk_V_4_reg is absorbed into DSP lms_mac_muladd_20fYi_U14/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: register C is absorbed into DSP lms_mac_muladd_20fYi_U14/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: operator lms_mac_muladd_20fYi_U14/lms_mac_muladd_20fYi_DSP48_4_U/p is absorbed into DSP lms_mac_muladd_20fYi_U14/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: operator lms_mac_muladd_20fYi_U14/lms_mac_muladd_20fYi_DSP48_4_U/m is absorbed into DSP lms_mac_muladd_20fYi_U14/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: Generating DSP lms_mac_muladd_16eOg_U6/lms_mac_muladd_16eOg_DSP48_3_U/p, operation Mode is: C+A2*B''.
+DSP Report: register wk_V_5_reg is absorbed into DSP lms_mac_muladd_16eOg_U6/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: register xk_V_3_reg is absorbed into DSP lms_mac_muladd_16eOg_U6/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: register xk_V_4_reg is absorbed into DSP lms_mac_muladd_16eOg_U6/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: operator lms_mac_muladd_16eOg_U6/lms_mac_muladd_16eOg_DSP48_3_U/p is absorbed into DSP lms_mac_muladd_16eOg_U6/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: operator lms_mac_muladd_16eOg_U6/lms_mac_muladd_16eOg_DSP48_3_U/m is absorbed into DSP lms_mac_muladd_16eOg_U6/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: Generating DSP lms_mac_muladd_20fYi_U15/lms_mac_muladd_20fYi_DSP48_4_U/p, operation Mode is: C'+A*B''.
+DSP Report: register xk_V_4_reg is absorbed into DSP lms_mac_muladd_20fYi_U15/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: register xk_V_5_reg is absorbed into DSP lms_mac_muladd_20fYi_U15/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: register C is absorbed into DSP lms_mac_muladd_20fYi_U15/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: operator lms_mac_muladd_20fYi_U15/lms_mac_muladd_20fYi_DSP48_4_U/p is absorbed into DSP lms_mac_muladd_20fYi_U15/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: operator lms_mac_muladd_20fYi_U15/lms_mac_muladd_20fYi_DSP48_4_U/m is absorbed into DSP lms_mac_muladd_20fYi_U15/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: Generating DSP lms_mac_muladd_16eOg_U7/lms_mac_muladd_16eOg_DSP48_3_U/p, operation Mode is: C+A2*B''.
+DSP Report: register wk_V_6_reg is absorbed into DSP lms_mac_muladd_16eOg_U7/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: register xk_V_4_reg is absorbed into DSP lms_mac_muladd_16eOg_U7/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: register xk_V_5_reg is absorbed into DSP lms_mac_muladd_16eOg_U7/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: operator lms_mac_muladd_16eOg_U7/lms_mac_muladd_16eOg_DSP48_3_U/p is absorbed into DSP lms_mac_muladd_16eOg_U7/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: operator lms_mac_muladd_16eOg_U7/lms_mac_muladd_16eOg_DSP48_3_U/m is absorbed into DSP lms_mac_muladd_16eOg_U7/lms_mac_muladd_16eOg_DSP48_3_U/p.
+DSP Report: Generating DSP lms_mac_muladd_20fYi_U16/lms_mac_muladd_20fYi_DSP48_4_U/p, operation Mode is: C'+A*B''.
+DSP Report: register xk_V_5_reg is absorbed into DSP lms_mac_muladd_20fYi_U16/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: register xk_V_6_reg is absorbed into DSP lms_mac_muladd_20fYi_U16/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: register C is absorbed into DSP lms_mac_muladd_20fYi_U16/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: operator lms_mac_muladd_20fYi_U16/lms_mac_muladd_20fYi_DSP48_4_U/p is absorbed into DSP lms_mac_muladd_20fYi_U16/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: operator lms_mac_muladd_20fYi_U16/lms_mac_muladd_20fYi_DSP48_4_U/m is absorbed into DSP lms_mac_muladd_20fYi_U16/lms_mac_muladd_20fYi_DSP48_4_U/p.
+DSP Report: Generating DSP ret_V_7_i_fu_522_p2, operation Mode is: C+A2*BCIN2.
+DSP Report: register wk_V_7_reg is absorbed into DSP ret_V_7_i_fu_522_p2.
+DSP Report: register xk_V_6_reg is absorbed into DSP ret_V_7_i_fu_522_p2.
+DSP Report: operator ret_V_7_i_fu_522_p2 is absorbed into DSP ret_V_7_i_fu_522_p2.
+DSP Report: operator lms_mul_mul_16s_1bkb_U8/lms_mul_mul_16s_1bkb_DSP48_0_U/p is absorbed into DSP ret_V_7_i_fu_522_p2.
+DSP Report: Generating DSP ret_V_7_i_cast_fu_1037_p2, operation Mode is: C'+(A2*B'')'.
+DSP Report: register wk_V_7_reg is absorbed into DSP ret_V_7_i_cast_fu_1037_p2.
+DSP Report: register C is absorbed into DSP ret_V_7_i_cast_fu_1037_p2.
+DSP Report: register xk_V_5_reg is absorbed into DSP ret_V_7_i_cast_fu_1037_p2.
+DSP Report: register xk_V_6_reg is absorbed into DSP ret_V_7_i_cast_fu_1037_p2.
+DSP Report: register r_V_5_7_i_reg_2144_reg is absorbed into DSP ret_V_7_i_cast_fu_1037_p2.
+DSP Report: operator ret_V_7_i_cast_fu_1037_p2 is absorbed into DSP ret_V_7_i_cast_fu_1037_p2.
+DSP Report: operator lms_mul_mul_16s_1bkb_U8/lms_mul_mul_16s_1bkb_DSP48_0_U/p is absorbed into DSP ret_V_7_i_cast_fu_1037_p2.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\ap_CS_fsm_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 817.191 ; gain = 521.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|lms         | C'+A*B       | 20     | 14     | 36     | -      | 36     | 0    | 0    | 1    | -    | -     | 0    | 0    | 
+|lms         | A2*B         | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|lms         | C'+A*B2      | 20     | 14     | 36     | -      | 36     | 0    | 1    | 1    | -    | -     | 0    | 0    | 
+|lms         | C+A2*B2      | 16     | 14     | 30     | -      | 31     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|lms         | C'+A*B''     | 20     | 14     | 36     | -      | 36     | 0    | 2    | 1    | -    | -     | 0    | 0    | 
+|lms         | C+A2*B''     | 16     | 14     | 31     | -      | 32     | 1    | 2    | 0    | -    | -     | 0    | 0    | 
+|lms         | C'+A*B''     | 20     | 14     | 36     | -      | 36     | 0    | 2    | 1    | -    | -     | 0    | 0    | 
+|lms         | C+A2*B''     | 16     | 14     | 32     | -      | 32     | 1    | 2    | 0    | -    | -     | 0    | 0    | 
+|lms         | C'+A*B''     | 20     | 14     | 36     | -      | 36     | 0    | 2    | 1    | -    | -     | 0    | 0    | 
+|lms         | C+A2*B''     | 16     | 14     | 32     | -      | 32     | 1    | 2    | 0    | -    | -     | 0    | 0    | 
+|lms         | C'+A*B''     | 20     | 14     | 36     | -      | 36     | 0    | 2    | 1    | -    | -     | 0    | 0    | 
+|lms         | C+A2*B''     | 16     | 14     | 32     | -      | 32     | 1    | 2    | 0    | -    | -     | 0    | 0    | 
+|lms         | C'+A*B''     | 20     | 14     | 36     | -      | 36     | 0    | 2    | 1    | -    | -     | 0    | 0    | 
+|lms         | C+A2*B''     | 16     | 14     | 32     | -      | 32     | 1    | 2    | 0    | -    | -     | 0    | 0    | 
+|lms         | C'+A*B''     | 20     | 14     | 36     | -      | 36     | 0    | 2    | 1    | -    | -     | 0    | 0    | 
+|lms         | C+A2*BCIN2   | 16     | 14     | 32     | -      | 32     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|lms         | C'+(A2*B'')' | 16     | 14     | 31     | -      | 31     | 1    | 2    | 1    | -    | -     | 1    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 891.340 ; gain = 595.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 906.090 ; gain = 610.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 911.188 ; gain = 615.445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 911.188 ; gain = 615.445
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 911.188 ; gain = 615.445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 911.188 ; gain = 615.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 911.188 ; gain = 615.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 911.188 ; gain = 615.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 911.188 ; gain = 615.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |     4|
+|2     |DSP48E1   |     1|
+|3     |DSP48E1_1 |     1|
+|4     |DSP48E1_2 |     1|
+|5     |DSP48E1_3 |     1|
+|6     |DSP48E1_4 |     6|
+|7     |DSP48E1_5 |     5|
+|8     |DSP48E1_6 |     1|
+|9     |DSP48E1_8 |     1|
+|10    |LUT2      |    15|
+|11    |LUT3      |     1|
+|12    |LUT4      |    11|
+|13    |FDRE      |    71|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+--------------------------------+------+
+|      |Instance                             |Module                          |Cells |
++------+-------------------------------------+--------------------------------+------+
+|1     |top                                  |                                |   119|
+|2     |  inst                               |lms                             |   119|
+|3     |    lms_mac_muladd_16cud_U2          |lms_mac_muladd_16cud            |     1|
+|4     |      lms_mac_muladd_16cud_DSP48_1_U |lms_mac_muladd_16cud_DSP48_1    |     1|
+|5     |    lms_mac_muladd_16dEe_U3          |lms_mac_muladd_16dEe            |     1|
+|6     |      lms_mac_muladd_16dEe_DSP48_2_U |lms_mac_muladd_16dEe_DSP48_2    |     1|
+|7     |    lms_mac_muladd_16eOg_U4          |lms_mac_muladd_16eOg            |     1|
+|8     |      lms_mac_muladd_16eOg_DSP48_3_U |lms_mac_muladd_16eOg_DSP48_3_19 |     1|
+|9     |    lms_mac_muladd_16eOg_U5          |lms_mac_muladd_16eOg_0          |     1|
+|10    |      lms_mac_muladd_16eOg_DSP48_3_U |lms_mac_muladd_16eOg_DSP48_3_18 |     1|
+|11    |    lms_mac_muladd_16eOg_U6          |lms_mac_muladd_16eOg_1          |     1|
+|12    |      lms_mac_muladd_16eOg_DSP48_3_U |lms_mac_muladd_16eOg_DSP48_3_17 |     1|
+|13    |    lms_mac_muladd_16eOg_U7          |lms_mac_muladd_16eOg_2          |     1|
+|14    |      lms_mac_muladd_16eOg_DSP48_3_U |lms_mac_muladd_16eOg_DSP48_3    |     1|
+|15    |    lms_mac_muladd_20fYi_U10         |lms_mac_muladd_20fYi            |     1|
+|16    |      lms_mac_muladd_20fYi_DSP48_4_U |lms_mac_muladd_20fYi_DSP48_4_16 |     1|
+|17    |    lms_mac_muladd_20fYi_U11         |lms_mac_muladd_20fYi_3          |     1|
+|18    |      lms_mac_muladd_20fYi_DSP48_4_U |lms_mac_muladd_20fYi_DSP48_4_15 |     1|
+|19    |    lms_mac_muladd_20fYi_U12         |lms_mac_muladd_20fYi_4          |     1|
+|20    |      lms_mac_muladd_20fYi_DSP48_4_U |lms_mac_muladd_20fYi_DSP48_4_14 |     1|
+|21    |    lms_mac_muladd_20fYi_U13         |lms_mac_muladd_20fYi_5          |     1|
+|22    |      lms_mac_muladd_20fYi_DSP48_4_U |lms_mac_muladd_20fYi_DSP48_4_13 |     1|
+|23    |    lms_mac_muladd_20fYi_U14         |lms_mac_muladd_20fYi_6          |     1|
+|24    |      lms_mac_muladd_20fYi_DSP48_4_U |lms_mac_muladd_20fYi_DSP48_4_12 |     1|
+|25    |    lms_mac_muladd_20fYi_U15         |lms_mac_muladd_20fYi_7          |     1|
+|26    |      lms_mac_muladd_20fYi_DSP48_4_U |lms_mac_muladd_20fYi_DSP48_4_11 |     1|
+|27    |    lms_mac_muladd_20fYi_U16         |lms_mac_muladd_20fYi_8          |    30|
+|28    |      lms_mac_muladd_20fYi_DSP48_4_U |lms_mac_muladd_20fYi_DSP48_4_10 |    30|
+|29    |    lms_mac_muladd_20fYi_U9          |lms_mac_muladd_20fYi_9          |     1|
+|30    |      lms_mac_muladd_20fYi_DSP48_4_U |lms_mac_muladd_20fYi_DSP48_4    |     1|
+|31    |    lms_mul_mul_16s_1bkb_U1          |lms_mul_mul_16s_1bkb            |     1|
+|32    |      lms_mul_mul_16s_1bkb_DSP48_0_U |lms_mul_mul_16s_1bkb_DSP48_0    |     1|
++------+-------------------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 911.188 ; gain = 615.445
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 911.188 ; gain = 246.105
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 911.188 ; gain = 615.445
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 911.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 911.188 ; gain = 624.523
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 911.188 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado_2018/Vivado/LMS/LMS.runs/lms_0_synth_1/lms_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP lms_0, cache-ID = b9597f03f7fa2902
+INFO: [Coretcl 2-1174] Renamed 31 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 911.188 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado_2018/Vivado/LMS/LMS.runs/lms_0_synth_1/lms_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lms_0_utilization_synth.rpt -pb lms_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 17:08:38 2020...
